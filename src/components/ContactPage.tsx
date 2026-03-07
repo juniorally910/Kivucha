@@ -361,7 +361,27 @@ export function ContactPage() {
                         )}
                       </div>
 
-                      
+                      <div className="fade-up-3">
+                        <label className="block text-xs uppercase tracking-widest text-gray-500 mb-2" style={{fontFamily:'DM Sans,sans-serif'}}>
+                          Subject <span className="text-red-400">*</span>
+                        </label>
+                        <select aria-label='name'
+                          name="subject" value={formData.subject}
+                          onChange={handleChange} onBlur={handleBlur}
+                          className={fieldClass('subject')}
+                          style={{fontFamily:'DM Sans,sans-serif'}}
+                        >
+                          <option value="">Select a subject</option>
+                          {SUBJECTS.map((subject) => (
+                            <option key={subject} value={subject}>{subject}</option>
+                          ))}
+                        </select>
+                        {touched.subject && errors.subject && (
+                          <p className="mt-1.5 text-xs text-red-500 flex items-center gap-1" style={{fontFamily:'DM Sans,sans-serif'}}>
+                            <AlertCircle className="w-3 h-3" /> {errors.subject}
+                          </p>
+                        )}
+                      </div>
                     </div>
 
                     {/* Message */}

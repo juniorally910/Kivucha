@@ -305,7 +305,7 @@ export function HomePage() {
                 to={`/insights/${insight.id}`}
                 className="group bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${insight.imageUrl})` }} />
+                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${insight.image})` }} />
                 <div className="p-6">
                   <div className="inline-block bg-[#C9A227] text-white text-xs font-semibold px-3 py-1 rounded mb-3">
                     {insight.category}
