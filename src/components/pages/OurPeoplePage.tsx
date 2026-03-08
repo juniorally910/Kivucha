@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from "lucide-react";
+{/*import { Mail, Linkedin } from "lucide-react";*/}
 
 interface TeamMember {
   id: string;

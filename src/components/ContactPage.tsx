@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send, Clock, CheckCircle, AlertCircle, ChevronRight, ExternalLink } from 'lucide-react';
+import { Mail, Phone, Send, Clock, CheckCircle, AlertCircle, ChevronRight } from 'lucide-react';
 import { useState, useRef } from 'react';
 
 interface FormData {
