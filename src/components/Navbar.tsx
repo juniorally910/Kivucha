@@ -355,7 +355,6 @@ export function Navbar() {
             {[
               { label: 'Our People',     href: '/people' },
               { label: 'Careers',        href: '/careers' },
-              { label: 'Trade & Tariffs',href: '/trade-tariffs' },
             ].map(item => (
               <Link
                 key={item.href}

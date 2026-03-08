@@ -13,7 +13,7 @@ export function ExpertisePage() {
       >
         <div className="absolute inset-0 bg-[#0B3C5D] opacity-85"></div>
         <div className="relative max-w-7xl mx-auto px-6 text-white">
-          <h1 className="text-5xl font-bold mb-4">OUR EXPERTISE</h1>
+          <h1 className="text-3xl font-bold mb-4">OUR EXPERTISE</h1>
           <p className="text-xl mb-6 max-w-2xl">
             Lean, fast-paced, integrated.
           </p>
