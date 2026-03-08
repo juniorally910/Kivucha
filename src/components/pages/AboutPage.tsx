@@ -14,13 +14,12 @@ export function AboutPage() {
   const [activeTimeline, setActiveTimeline] = useState<number | null>(null);
 
   const statistics = [
-    { number: "500+", label: "Global Clients", sublabel: "Across Industries" },
-    { number: "25+", label: "Years of", sublabel: "Experience" },
-    { number: "$100B+", label: "in Transaction", sublabel: "Value" },
-    { number: "150+", label: "Expert", sublabel: "Professionals" },
-    { number: "8", label: "Core", sublabel: "Expertise Areas" },
-    { number: "15+", label: "Countries", sublabel: "Served" },
-  ];
+    { number: "200+",  label: "Clients Across",   sublabel: "Africa"           },
+    { number: "72+",   label: "Years of",         sublabel: "Excellence"       },
+    { number: "50+",   label: "Expert",           sublabel: "Professionals"    },
+    { number: "8",     label: "Core",             sublabel: "Expertise Areas"  },
+    { number: "10+",   label: "African Countries",sublabel: "Served"           },
+      ];
 
   const industries = [
     { icon: Building2, label: "Retail" },
@@ -60,9 +59,9 @@ export function AboutPage() {
     },
     {
       year: "2016 - Present",
-      title: "Global Leadership",
-      description: "Today, Kivucha stands as a global leader in investment and consulting services. With offices across three continents and a team of over 150 professionals, the legacy built by Anthony Nubaha and Stanislas Nyamucenshera continues to deliver transformative results for clients worldwide.",
-      image: "https://images.unsplash.com/photo-1758873268663-5a362616b5a7?..."
+      title: "Pan-African Leadership",
+      description: "Today, Kivucha stands as a leading investment and consulting firm across Africa. With a growing presence in over 10 African countries and a team of dedicated professionals, the legacy built by Anthony Nubaha and Stanislas Nyamucenshera continues to deliver transformative results for clients across the continent.",
+      image: "https://images.unsplash.com/photo-1594098882270-66ce9399b040?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwYnVzaW5lc3MlMjBtZWV0aW5nJTIwZGlzY3Vzc2lvbnxlbnwxfHx8fDE3NzI5NTk2OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
     }
   ];
 
@@ -91,7 +90,10 @@ export function AboutPage() {
                 WHO WE ARE
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Kivucha is a trusted advisor and consulting firm recognized globally for providing practical solutions to the unique problems of companies, investors, and government entities. We deliver advisory, business performance improvement, and turnaround management services across the spectrum of market conditions that help clients act decisively, adapt quickly, and accelerate results.
+                Kivucha Investment and Consulting Company is a trusted pan-African advisory 
+                firm recognised for providing practical solutions to businesses, investors, 
+                and government entities across Africa. We deliver advisory, business performance improvement, 
+                and turnaround management services that help African organisations act decisively, adapt quickly, and accelerate results.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Young and experienced professionals seek Kivucha as an employer of choice, consistently ranking us in the market as a top-tier, globally led diversified advisory firm's leadership, benefits, compensation, learning, and work-life balance.

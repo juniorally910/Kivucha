@@ -12,51 +12,51 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     id: "1",
-    name: "Sarah Johnson",
+    name: "Amani Uwimana",
     title: "Managing Director, Corporate Finance",
     expertise: "M&A, Corporate Restructuring",
-    bio: "Sarah brings over 20 years of experience in corporate finance and M&A advisory, having led numerous high-profile transactions across multiple industries.",
-    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    bio: "Amani brings over 20 years of experience in corporate finance and M&A advisory, having led numerous high-profile transactions across East Africa and beyond.",
+    imageUrl: "https://images.unsplash.com/photo-1668752600261-e56e7f3780b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwcHJvZmVzc2lvbmFsJTIwbWFuJTIwaGVhZHNob3R8ZW58MXx8fHwxNzcyOTU5MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080"
   },
   {
     id: "2",
-    name: "Michael Chen",
+    name: "Kwame Nkunda",
     title: "Partner, Private Equity Services",
     expertise: "Private Equity, Valuations",
-    bio: "Michael specializes in private equity transactions and valuations, with extensive experience supporting PE firms throughout the investment lifecycle.",
-    imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    bio: "Kwame specializes in private equity transactions and valuations, with extensive experience supporting PE firms throughout the investment lifecycle across African markets.",
+    imageUrl: "https://images.unsplash.com/photo-1645736593932-2c877741fd6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwbWFuJTIwYnVzaW5lc3MlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzI5NTkyMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
   },
   {
     id: "3",
-    name: "Emily Rodriguez",
+    name: "Nia Kalisa",
     title: "Managing Director, Tax Services",
     expertise: "International Tax, Tax Strategy",
-    bio: "Emily leads our tax practice with deep expertise in international tax planning and compliance for multinational corporations.",
-    imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    bio: "Nia leads our tax practice with deep expertise in international tax planning and compliance for multinational corporations operating in Africa.",
+    imageUrl: "https://images.unsplash.com/photo-1668752741330-8adc5cef7485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwd29tYW4lMjBwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwxfHx8fDE3NzI5NTkyMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
   },
   {
     id: "4",
-    name: "David Thompson",
+    name: "Jabari Mugisha",
     title: "Partner, Corporate Performance",
     expertise: "Operational Excellence, Turnaround",
-    bio: "David specializes in operational improvement and turnaround situations, helping companies achieve sustainable performance enhancement.",
-    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    bio: "Jabari specializes in operational improvement and turnaround situations, helping African companies achieve sustainable performance enhancement and growth.",
+    imageUrl: "https://images.unsplash.com/flagged/photo-1555497742-77cf45746c7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwYnVzaW5lc3NtYW4lMjBmYWNlJTIwY2xvc2V1cHxlbnwxfHx8fDE3NzI5NTkyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080"
   },
   {
     id: "5",
-    name: "Jennifer Kim",
+    name: "Zuri Mutesi",
     title: "Managing Director, Risk & Advisory",
     expertise: "Risk Management, Compliance",
-    bio: "Jennifer leads our risk advisory practice, helping organizations navigate complex regulatory environments and manage enterprise risk.",
-    imageUrl: "https://images.unsplash.com/photo-1590086782957-93c06ef21604?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    bio: "Zuri leads our risk advisory practice, helping organizations navigate complex regulatory environments and manage enterprise risk across the African continent.",
+    imageUrl: "https://images.unsplash.com/photo-1559154352-06e29e1e11aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwZXhlY3V0aXZlJTIwd29tYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzI5NTkyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080"
   },
   {
     id: "6",
-    name: "Robert Martinez",
+    name: "Kevine Nande",
     title: "Partner, Crypto Advisory",
     expertise: "Digital Assets, Blockchain",
-    bio: "Robert leads our crypto advisory practice with extensive experience in digital assets, blockchain technology, and crypto regulatory compliance.",
-    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    bio: "Kofi leads our crypto advisory practice with extensive experience in digital assets, blockchain technology, and crypto regulatory compliance in emerging markets.",
+    imageUrl: "https://images.unsplash.com/photo-1746104718762-fb421954cc1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwYnVzaW5lc3N3b21hbiUyMGZhY2UlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzI5NTkyMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
   }
 ];
 
@@ -114,14 +114,6 @@ export function OurPeoplePage() {
                 <p className="text-gray-700 text-sm leading-relaxed mb-4">
                   {member.bio}
                 </p>
-                <div className="flex gap-3">
-                  <button  aria-label="mail" className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0B3C5D] text-white hover:bg-[#C9A227] transition-colors">
-                    <Mail className="w-4 h-4" />
-                  </button>
-                  <button aria-label="linkedin" className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0B3C5D] text-white hover:bg-[#C9A227] transition-colors">
-                    <Linkedin className="w-4 h-4" />
-                  </button>
-                </div>
               </div>
             </div>
           ))}

@@ -26,7 +26,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Kivucha Investment & Consulting</h3>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Transforming businesses through strategic insights and innovative solutions.
+              Empowering African businesses through strategic insights, innovative solutions, and deep local market expertise.
             </p>
             <div className="flex gap-3">
               {[

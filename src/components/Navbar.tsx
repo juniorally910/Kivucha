@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router';
 import { ChevronDown, Search, X, Menu, ChevronRight } from 'lucide-react';
-import logoDark from '../assets/logotr.png';   // logo for transparent (light) state
-import logoLight from '../assets/logo.png';         // logo for scrolled (dark bg) state
+import logoDark from '../assets/logotr.png';   
+import logoLight from '../assets/logo.png';         
 
 const expertiseItems = [
   { label: 'Corporate Transaction',     href: '/expertise/corporate-transaction' },
@@ -195,7 +195,6 @@ export function Navbar() {
               {/* Simple links */}
               <Link to="/people"        className={`text-sm ${textColor} ${hoverColor} transition-colors uppercase tracking-wide whitespace-nowrap`}>Our People</Link>
               <Link to="/careers"       className={`text-sm ${textColor} ${hoverColor} transition-colors uppercase tracking-wide`}>Careers</Link>
-              <Link to="/trade-tariffs" className={`text-sm ${textColor} ${hoverColor} transition-colors uppercase tracking-wide whitespace-nowrap`}>Trade &amp; Tariffs</Link>
               </div>{/* end nav items group */}
 
               {/* Search — pushed to far right */}

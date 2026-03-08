@@ -10,7 +10,6 @@ import { IndustryDetailPage } from './components/pages/IndustryDetailPage'
 import { InsightsPage } from './components/pages/InsightPage'
 import { InsightDetailPage } from './components/pages/InsightDetailPage'
 import { OurPeoplePage } from './components/pages/OurPeoplePage'
-import { TradeAndTariffsPage } from './components/pages/TradeAndTariffsPage'
 import { CareersPage } from './components/pages/CareersPage'
 import { ScrollToTop } from './components/ScrollToTop'
 
@@ -31,7 +30,6 @@ const App = () => {
         <Route path='/insights/:id' element={<InsightDetailPage />} />
         <Route path='/people' element={<OurPeoplePage />} />
         <Route path='/people' element={<OurPeoplePage />} />
-        <Route path='/trade-tariffs' element={<TradeAndTariffsPage />} />
         <Route path='/careers' element={<CareersPage />} />
 
 

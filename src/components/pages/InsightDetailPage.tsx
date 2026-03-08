@@ -84,7 +84,7 @@ export function InsightDetailPage() {
                 Connect with our experts to discuss how these insights can be applied to your business challenges.
               </p>
               <Link
-                to="/#contact"
+                to="/contact"
                 className="inline-block px-6 py-3 bg-[#d4af37] text-white rounded-lg hover:bg-[#b8941f] transition-colors"
               >
                 Contact Our Team

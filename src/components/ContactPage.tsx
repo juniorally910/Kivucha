@@ -26,6 +26,7 @@ const SUBJECTS = [
   'Crypto Advisory',
   'Valuation Services',
   'General Inquiry',
+  'Others'
 ];
 
 export function ContactPage() {
@@ -184,6 +185,7 @@ export function ContactPage() {
                 <div className="space-y-8 fade-up-3">
 
                   {/* Address */}
+                  {/*
                   <div className="info-card flex items-start gap-4 group cursor-default">
                     <div className="info-icon w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 transition-all duration-300">
                       <MapPin className="w-5 h-5 text-[#C9A227] transition-colors duration-300" />
@@ -205,7 +207,7 @@ export function ContactPage() {
                         <ExternalLink className="w-3 h-3 mt-0.5 flex-shrink-0 opacity-0 group-hover/link:opacity-100 transition-opacity" />
                       </a>
                     </div>
-                  </div>
+                  </div>*/}
 
                   {/* Phone */}
                   <div className="info-card flex items-start gap-4 group cursor-default">
@@ -311,7 +313,7 @@ export function ContactPage() {
                         <input
                           type="text" name="name" value={formData.name}
                           onChange={handleChange} onBlur={handleBlur}
-                          placeholder="Jane Doe"
+                          placeholder="Jane Mutesi"
                           className={fieldClass('name')}
                           style={{fontFamily:'DM Sans,sans-serif'}}
                         />

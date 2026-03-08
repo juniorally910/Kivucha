@@ -119,10 +119,10 @@ export function HomePage() {
         <div className="relative h-full flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 text-white">
             <h1 className="text-2xl sm:text-4xl lg:text-4xl font-bold mb-6 max-w-4xl leading-tight">
-              Empowering Businesses Through Strategic Investment and Advisory
+              Empowering African Businesses Through Strategic Investment and Advisory
             </h1>
             <p className="text-lg sm:text-xl lg:text-xl mb-8 max-w-3xl text-gray-200">
-              Kivucha delivers comprehensive investment and consulting solutions that drive sustainable growth and maximize value for clients across industries.
+              Kivucha delivers comprehensive investment and consulting solutions across Africa, driving sustainable growth and maximising value for clients in the continent's most dynamic markets.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -161,10 +161,14 @@ export function HomePage() {
             <div>
               <h2 className="text-4xl font-bold text-[#0B3C5D] mb-6">Who We Are</h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Kivucha Investment and Consulting Company is a trusted partner for businesses seeking strategic advisory, financial expertise, and innovative solutions. Our mission is to empower organizations through data-driven insights, operational excellence, and sustainable value creation.
-              </p>
+               Kivucha Investment and Consulting Company is a trusted pan African advisory firm, partnering with businesses, 
+               investors, and government entities across the African continent. Our mission is to empower African organisations 
+               through data-driven insights, operational excellence, and sustainable value creation tailored to local market realities.
+               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                We combine deep industry knowledge with proven methodologies to deliver differentiated outcomes. Our team of experts brings decades of experience across corporate finance, private equity, tax, valuation, risk advisory, and emerging technologies like cryptocurrency.
+                We combine deep pan-African market knowledge with proven methodologies to deliver differentiated outcomes. 
+                Our team brings extensive experience across corporate finance, private equity, tax, valuation, risk advisory, 
+                and emerging technologies  built specifically for African markets.
               </p>
               <Link
                 to="/about"
