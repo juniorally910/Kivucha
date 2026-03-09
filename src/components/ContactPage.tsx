@@ -1,5 +1,10 @@
-import { Mail, Phone, Send, Clock, CheckCircle, AlertCircle, ChevronRight } from 'lucide-react';
+import { Mail, Phone, Send, Clock, CheckCircle, AlertCircle, ChevronRight, ExternalLink, MessageCircle } from 'lucide-react';
 import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+const EMAILJS_SERVICE_ID  = 'service_9ljf4su';   // replace with your EmailJS Service ID
+const EMAILJS_TEMPLATE_ID = 'template_8sw6bss';  // replace with your EmailJS Template ID
+const EMAILJS_PUBLIC_KEY  = 'HpM0cMNeKFxNL3Rdy';   // replace with your EmailJS Public Key
 
 interface FormData {
   name: string;
@@ -26,7 +31,6 @@ const SUBJECTS = [
   'Crypto Advisory',
   'Valuation Services',
   'General Inquiry',
-  'Others'
 ];
 
 export function ContactPage() {
@@ -46,13 +50,13 @@ export function ContactPage() {
   /* ── Validation ── */
   const validate = (data: FormData): FormErrors => {
     const e: FormErrors = {};
-    if (!data.name.trim())                              e.name    = 'Full name is required.';
-    if (!data.email.trim())                             e.email   = 'Email address is required.';
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) e.email = 'Enter a valid email address.';
-    if (data.phone && !/^[+\d\s\-()]{7,}$/.test(data.phone)) e.phone = 'Enter a valid phone number.';
-    if (!data.subject)                                  e.subject = 'Please select a subject.';
-    if (!data.message.trim())                           e.message = 'Message cannot be empty.';
-    else if (data.message.trim().length < 10)           e.message = 'Message must be at least 10 characters.';
+    if (!data.name.trim())                                    e.name    = 'Full name is required.';
+    if (!data.email.trim())                                   e.email   = 'Email address is required.';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) e.email   = 'Enter a valid email address.';
+    if (data.phone && !/^[+\d\s\-()]{7,}$/.test(data.phone)) e.phone   = 'Enter a valid phone number.';
+    if (!data.subject)                                        e.subject = 'Please select a subject.';
+    if (!data.message.trim())                                 e.message = 'Message cannot be empty.';
+    else if (data.message.trim().length < 10)                 e.message = 'Message must be at least 10 characters.';
     return e;
   };
 
@@ -69,27 +73,41 @@ export function ContactPage() {
     setErrors(validate(formData));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const allTouched = { name: true, email: true, phone: true, subject: true, message: true };
     setTouched(allTouched);
     const errs = validate(formData);
     setErrors(errs);
     if (Object.keys(errs).length > 0) {
-      // Scroll to first error
       formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       return;
     }
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name:  formData.name,
+          from_email: formData.email,
+          phone:      formData.phone,
+          subject:    formData.subject,
+          message:    formData.message,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
       setSubmitted(true);
-    }, 1600);
+    } catch (error) {
+      alert('Something went wrong. Please try again or email us directly at info@kivucha.com');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const fieldClass = (field: keyof FormData) => {
     const base = `w-full px-4 py-3 bg-white border-2 rounded-none text-[#0B3C5D] placeholder-gray-400 outline-none transition-all duration-200 text-sm font-light`;
-    if (touched[field] && errors[field])  return `${base} border-red-400 focus:border-red-500 bg-red-50/30`;
+    if (touched[field] && errors[field])                     return `${base} border-red-400 focus:border-red-500 bg-red-50/30`;
     if (touched[field] && !errors[field] && formData[field]) return `${base} border-[#C9A227] focus:border-[#C9A227]`;
     return `${base} border-gray-200 focus:border-[#0B3C5D]`;
   };
@@ -184,8 +202,7 @@ export function ContactPage() {
 
                 <div className="space-y-8 fade-up-3">
 
-                  {/* Address */}
-                  {/*
+                  {/* Address 
                   <div className="info-card flex items-start gap-4 group cursor-default">
                     <div className="info-icon w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 transition-all duration-300">
                       <MapPin className="w-5 h-5 text-[#C9A227] transition-colors duration-300" />
@@ -207,7 +224,7 @@ export function ContactPage() {
                         <ExternalLink className="w-3 h-3 mt-0.5 flex-shrink-0 opacity-0 group-hover/link:opacity-100 transition-opacity" />
                       </a>
                     </div>
-                  </div>*/}
+                  </div> */}
 
                   {/* Phone */}
                   <div className="info-card flex items-start gap-4 group cursor-default">
@@ -216,8 +233,32 @@ export function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs text-white/40 uppercase tracking-widest mb-1" style={{fontFamily:'DM Sans,sans-serif'}}>Telephone</p>
-                      <a href="tel:+250788000000" className="text-sm text-white/90 hover:text-[#C9A227] transition-colors" style={{fontFamily:'DM Sans,sans-serif'}}>
-                        +250 788 000 000
+                      <a
+                        href="tel:+1 (651) 269-3520"
+                        className="text-sm text-white/90 hover:text-[#C9A227] transition-colors"
+                        style={{fontFamily:'DM Sans,sans-serif'}}
+                      >
+                        +1 (651) 269-3520
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* WhatsApp */}
+                  <div className="info-card flex items-start gap-4 group cursor-default">
+                    <div className="info-icon w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 transition-all duration-300">
+                      <MessageCircle className="w-5 h-5 text-[#C9A227] transition-colors duration-300" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-white/40 uppercase tracking-widest mb-1" style={{fontFamily:'DM Sans,sans-serif'}}>WhatsApp</p>
+                      <a
+                        href="https://wa.me/+1 (651) 269-3520"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-white/90 hover:text-[#C9A227] transition-colors flex items-center gap-1.5"
+                        style={{fontFamily:'DM Sans,sans-serif'}}
+                      >
+                        +1 (651) 269-3520
+                        <ExternalLink className="w-3 h-3 opacity-50" />
                       </a>
                     </div>
                   </div>
@@ -229,11 +270,17 @@ export function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs text-white/40 uppercase tracking-widest mb-1" style={{fontFamily:'DM Sans,sans-serif'}}>Email</p>
-                      <a href="mailto:info@kivucha.com" className="text-sm text-white/90 hover:text-[#C9A227] transition-colors" style={{fontFamily:'DM Sans,sans-serif'}}>
-                        info@kivucha.com
+                      <a
+                        href="mailto:daniel.roth@kivucha.com?subject=Inquiry from Website"
+                        className="text-sm text-white/90 hover:text-[#C9A227] transition-colors flex items-center gap-1.5"
+                        style={{fontFamily:'DM Sans,sans-serif'}}
+                      >
+                        daniel.roth@kivucha.com
+                        <ExternalLink className="w-3 h-3 opacity-50" />
                       </a>
                     </div>
                   </div>
+
                 </div>
               </div>
 
@@ -277,7 +324,12 @@ export function ContactPage() {
                     Thank you for reaching out. A member of our team will be in touch with you within 24 hours.
                   </p>
                   <button
-                    onClick={() => { setSubmitted(false); setFormData({ name:'', email:'', phone:'', subject:'', message:'' }); setTouched({}); setErrors({}); }}
+                    onClick={() => {
+                      setSubmitted(false);
+                      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+                      setTouched({});
+                      setErrors({});
+                    }}
                     className="flex items-center gap-2 text-sm text-[#0B3C5D] border-b border-[#C9A227] pb-0.5 hover:text-[#C9A227] transition-colors"
                     style={{fontFamily:'DM Sans,sans-serif'}}
                   >
@@ -313,7 +365,7 @@ export function ContactPage() {
                         <input
                           type="text" name="name" value={formData.name}
                           onChange={handleChange} onBlur={handleBlur}
-                          placeholder="Jane Mutesi"
+                          placeholder="Jane Doe"
                           className={fieldClass('name')}
                           style={{fontFamily:'DM Sans,sans-serif'}}
                         />
@@ -367,16 +419,14 @@ export function ContactPage() {
                         <label className="block text-xs uppercase tracking-widest text-gray-500 mb-2" style={{fontFamily:'DM Sans,sans-serif'}}>
                           Subject <span className="text-red-400">*</span>
                         </label>
-                        <select aria-label='name'
+                        <select aria-label='subject'
                           name="subject" value={formData.subject}
                           onChange={handleChange} onBlur={handleBlur}
-                          className={fieldClass('subject')}
+                          className={`${fieldClass('subject')} appearance-none cursor-pointer`}
                           style={{fontFamily:'DM Sans,sans-serif'}}
                         >
-                          <option value="">Select a subject</option>
-                          {SUBJECTS.map((subject) => (
-                            <option key={subject} value={subject}>{subject}</option>
-                          ))}
+                          <option value="">Select a topic…</option>
+                          {SUBJECTS.map(s => <option key={s} value={s}>{s}</option>)}
                         </select>
                         {touched.subject && errors.subject && (
                           <p className="mt-1.5 text-xs text-red-500 flex items-center gap-1" style={{fontFamily:'DM Sans,sans-serif'}}>
