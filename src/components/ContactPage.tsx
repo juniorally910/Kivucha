@@ -1,4 +1,4 @@
-import { Mail, Phone, Send, Clock, CheckCircle, AlertCircle, ChevronRight, ExternalLink, MessageCircle } from 'lucide-react';
+import { Send, Clock, CheckCircle, AlertCircle, ChevronRight } from 'lucide-react';
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -224,9 +224,9 @@ export function ContactPage() {
                         <ExternalLink className="w-3 h-3 mt-0.5 flex-shrink-0 opacity-0 group-hover/link:opacity-100 transition-opacity" />
                       </a>
                     </div>
-                  </div> */}
+                  </div> 
 
-                  {/* Phone */}
+                  
                   <div className="info-card flex items-start gap-4 group cursor-default">
                     <div className="info-icon w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 transition-all duration-300 relative pulse-dot">
                       <Phone className="w-5 h-5 text-[#C9A227] transition-colors duration-300" />
@@ -243,7 +243,7 @@ export function ContactPage() {
                     </div>
                   </div>
 
-                  {/* WhatsApp */}
+                  
                   <div className="info-card flex items-start gap-4 group cursor-default">
                     <div className="info-icon w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 transition-all duration-300">
                       <MessageCircle className="w-5 h-5 text-[#C9A227] transition-colors duration-300" />
@@ -263,7 +263,7 @@ export function ContactPage() {
                     </div>
                   </div>
 
-                  {/* Email */}
+                  {/* Email 
                   <div className="info-card flex items-start gap-4 group cursor-default">
                     <div className="info-icon w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 transition-all duration-300">
                       <Mail className="w-5 h-5 text-[#C9A227] transition-colors duration-300" />
@@ -280,6 +280,7 @@ export function ContactPage() {
                       </a>
                     </div>
                   </div>
+                  */}
 
                 </div>
               </div>
