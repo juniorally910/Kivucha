@@ -1,4 +1,4 @@
-import { Send, Clock, CheckCircle, AlertCircle, ChevronRight } from 'lucide-react';
+import { Send, Clock, CheckCircle, AlertCircle, ChevronRight, Mail, ExternalLink } from 'lucide-react';
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -262,8 +262,9 @@ export function ContactPage() {
                       </a>
                     </div>
                   </div>
+                  */}
 
-                  {/* Email 
+                   Email 
                   <div className="info-card flex items-start gap-4 group cursor-default">
                     <div className="info-icon w-11 h-11 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 transition-all duration-300">
                       <Mail className="w-5 h-5 text-[#C9A227] transition-colors duration-300" />
@@ -275,12 +276,12 @@ export function ContactPage() {
                         className="text-sm text-white/90 hover:text-[#C9A227] transition-colors flex items-center gap-1.5"
                         style={{fontFamily:'DM Sans,sans-serif'}}
                       >
-                        daniel.roth@kivucha.com
+                        Contact us through our email
                         <ExternalLink className="w-3 h-3 opacity-50" />
                       </a>
                     </div>
                   </div>
-                  */}
+                  
 
                 </div>
               </div>
