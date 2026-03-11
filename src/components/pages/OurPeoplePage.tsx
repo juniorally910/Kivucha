@@ -48,7 +48,7 @@ const teamMembers: TeamMember[] = [
     title: "Managing Director, Risk & Advisory",
     expertise: "Risk Management, Compliance",
     bio: "Zuri leads our risk advisory practice, helping organizations navigate complex regulatory environments and manage enterprise risk across the African continent.",
-    imageUrl: "https://images.unsplash.com/photo-1559154352-06e29e1e11aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwZXhlY3V0aXZlJTIwd29tYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzI5NTkyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    imageUrl: "https://images.unsplash.com/photo-1633419798503-0b0c628f267c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "6",

@@ -17,7 +17,7 @@ import { ContactPage } from "../ContactPage";
 
 const heroImages = [
   "https://images.unsplash.com/photo-1713937118847-3e1970b61cd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBvZmZpY2UlMjBza3lsaW5lfGVufDF8fHx8MTc3Mjg3NzMyNnww&ixlib=rb-4.1.0&q=80&w=1080",
-  "https://images.unsplash.com/photo-1761233138997-44d9b002a08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBtYXJrZXQlMjB0cmFkaW5nJTIwZmxvb3J8ZW58MXx8fHwxNzcyODc3MzI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+  "https://images.unsplash.com/photo-1594098882270-66ce9399b040?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwYnVzaW5lc3MlMjBtZWV0aW5nJTIwZGlzY3Vzc2lvbnxlbnwxfHx8fDE3NzI5NTk2OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
   "https://images.unsplash.com/photo-1758520144427-ddb02ac74e9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxleGVjdXRpdmUlMjBidXNpbmVzcyUyMGhhbmRzaGFrZXxlbnwxfHx8fDE3NzI4NzczMjd8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ];
 
@@ -180,7 +180,7 @@ export function HomePage() {
             </div>
             <div
               className="h-[500px] rounded-lg bg-cover bg-center shadow-xl"
-              style={{ backgroundImage: `url(https://images.unsplash.com/photo-1769839271827-e7e287319dd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3NzI3ODgzMTl8MA&ixlib=rb-4.1.0&q=80&w=1080)` }}
+              style={{ backgroundImage: `url(https://images.unsplash.com/photo-1705858246894-72667ab2b991?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QWZyaWNhbiUyMGNpdHklMjBza3lsaW5lJTIwYnVzaW5lc3N8ZW58MHx8MHx8fDA%3D)` }}
             />
           </div>
         </div>

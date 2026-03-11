@@ -83,7 +83,7 @@ export function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div
               className="h-[400px] rounded-lg bg-cover bg-center shadow-xl order-2 lg:order-1"
-              style={{ backgroundImage: `url(https://images.unsplash.com/photo-1560422445-5576143c092f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGV4ZWN1dGl2ZXMlMjBtZWV0aW5nJTIwZGlzY3Vzc2lvbnxlbnwxfHx8fDE3NzI4ODQ3MzN8MA&ixlib=rb-4.1.0&q=80&w=1080)` }}
+              style={{ backgroundImage: `url(https://images.unsplash.com/photo-1758519289200-384c7ef2d163?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWZyaWNhbiUyMGJ1c2luZXNzbWFuJTIwdGFsa2luZyUyMHNlcmlvdXMlMjBidXNpbmVzc3xlbnwwfHwwfHx8MA%3D%3D)` }}
             />
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-bold text-[#0B3C5D] mb-6 border-l-4 border-[#C9A227] pl-4">
@@ -120,7 +120,7 @@ export function AboutPage() {
             </div>
             <div
               className="h-[400px] rounded-lg bg-cover bg-center shadow-xl"
-              style={{ backgroundImage: `url(https://images.unsplash.com/photo-1758873268663-5a362616b5a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwdGVhbSUyMGNvbGxhYm9yYXRpb24lMjBvZmZpY2V8ZW58MXx8fHwxNzcyODg0NzM0fDA&ixlib=rb-4.1.0&q=80&w=1080)` }}
+              style={{ backgroundImage: `url(https://plus.unsplash.com/premium_photo-1681398556150-7fa0d1e72703?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QWZyaWNhbiUyMGJ1c2luZXNzJTIwcHJvZmVzc2lvbmFscyUyMG1lZXRpbmd8ZW58MHx8MHx8fDA%3D)` }}
             />
           </div>
         </div>

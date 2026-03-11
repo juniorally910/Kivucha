@@ -272,11 +272,11 @@ export function ContactPage() {
                     <div>
                       <p className="text-xs text-white/40 uppercase tracking-widest mb-1" style={{fontFamily:'DM Sans,sans-serif'}}>Email</p>
                       <a
-                        href="mailto:daniel.roth@kivucha.com?subject=Inquiry from Website"
+                        href="mailto:info@kivucha.com?subject=Inquiry from Website"
                         className="text-sm text-white/90 hover:text-[#C9A227] transition-colors flex items-center gap-1.5"
                         style={{fontFamily:'DM Sans,sans-serif'}}
                       >
-                        Contact us through our email
+                        info@kivucha.com
                         <ExternalLink className="w-3 h-3 opacity-50" />
                       </a>
                     </div>
